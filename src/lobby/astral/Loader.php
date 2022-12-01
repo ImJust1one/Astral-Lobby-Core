@@ -6,8 +6,15 @@ use pocketmine\plugin\PluginBase;
 
 class Loader extends PluginBase {
   
-  public function OnEnable(): void {
+  public function onEnable(): void {
     $this->getLogger()->info("Astral Lobby Core Enable");
+    
+    #listeners
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
   }
+  
+  public function onDisable(): void {
+    $this->getLogger()->info("Astral Lobby Core Disable");
+  }
+  
 }
