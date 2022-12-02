@@ -30,7 +30,7 @@ class EventListener implements Listener{
 
   }
 
-  public function PlayerDropItem(PlayerDropItemEvent $ev)¨{
+  public function PlayerDropItem(PlayerDropItemEvent $ev){
     $ev->cancel();
 
   }
