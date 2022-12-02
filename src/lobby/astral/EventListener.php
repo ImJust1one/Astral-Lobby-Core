@@ -8,7 +8,10 @@ use pocketmine\event\block\BlockPlaceEvent;
 use pocketmine\event\block\BlockBreakEvent;
 
 use pocketmine\event\entity\EntityDamageEvent;
+
 use pocketmine\event\player\PlayerDropItemEvent;
+use pocketmine\event\player\PlayerInteractEvent;
+
 
 class EventListener implements Listener{ 
 
@@ -31,4 +34,5 @@ class EventListener implements Listener{
     $ev->cancel();
 
   }
+
 }
