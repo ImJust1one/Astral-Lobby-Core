@@ -11,7 +11,7 @@ use pocketmine\event\entity\EntityDamageEvent;
 
 use pocketmine\event\player\PlayerDropItemEvent;
 use pocketmine\event\player\PlayerInteractEvent;
-
+use pocketmine\event\player\PlayerChatEvent;
 use pocketmine\event\inventory\InventoryTransactionEvent;
 
 class EventListener implements Listener{ 
@@ -38,7 +38,12 @@ class EventListener implements Listener{
 
   public function InventoryTransaction(InventoryTransactionEvent $ev){
     $ev->cancel();
+    
+  } 
+  
+  public function PlayerChat(PlayerChatEvent $ev){
+    $ev->cancel()
 
-  }  
+  } 
 
 }
