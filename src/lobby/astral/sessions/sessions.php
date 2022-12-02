@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\player\PlayerQuitEvent;
 
-class sessions implements Listener {
+class Sessions implements Listener {
 
   public function onJoin(PlayerJoinEvent $event){
 
