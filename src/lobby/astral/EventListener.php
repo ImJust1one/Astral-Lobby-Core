@@ -12,6 +12,23 @@ use pocketmine\event\player\PlayerDropItemEvent;
 
 class EventListener implements Listener{ 
 
-    
+  public fuction BlockBreak(BlockBreakEvent $ev){
+    $ev->cancel();
 
+  }
+
+  public fuction BlockPlace(BlockPlaceEvent $ev){
+    $ev->cancel();
+    
+  }
+
+  public fuction EntityDamage(EntityDamageEvent $ev){
+    $ev->cancel();
+
+  }
+
+  public fuction PlayerDropItem(PlayerDropItemEvent $ev)¨{
+    $ev->cancel();
+
+  }
 }
