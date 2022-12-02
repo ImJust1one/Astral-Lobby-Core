@@ -4,6 +4,8 @@ namespace lobby\astral;
 
 use pocketmine\plugin\PluginBase;
 
+use lobby\astral\sessions\Sessions;
+
 class Loader extends PluginBase {
   
   public function onEnable(): void {
@@ -11,6 +13,7 @@ class Loader extends PluginBase {
     
     #listeners
     $this->getServer()->getPluginManager()->registerEvents(new EventListener(), $this);
+    $this->getServer()->getPluginManager()->registerEvents(new Sessions(), $this);
   }
   
   public function onDisable(): void {
