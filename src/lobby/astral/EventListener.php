@@ -15,22 +15,22 @@ use pocketmine\event\player\PlayerInteractEvent;
 
 class EventListener implements Listener{ 
 
-  public fuction BlockBreak(BlockBreakEvent $ev){
+  public function BlockBreak(BlockBreakEvent $ev){
     $ev->cancel();
 
   }
 
-  public fuction BlockPlace(BlockPlaceEvent $ev){
+  public function BlockPlace(BlockPlaceEvent $ev){
     $ev->cancel();
     
   }
 
-  public fuction EntityDamage(EntityDamageEvent $ev){
+  public function EntityDamage(EntityDamageEvent $ev){
     $ev->cancel();
 
   }
 
-  public fuction PlayerDropItem(PlayerDropItemEvent $ev)¨{
+  public function PlayerDropItem(PlayerDropItemEvent $ev)¨{
     $ev->cancel();
 
   }
